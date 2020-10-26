@@ -12,4 +12,8 @@ export class ListsPage implements OnInit {
   ngOnInit() {
   }
 
+  enviar(item: string) {
+    console.log('Item Selecionad: ', item);
+  }
+
 }

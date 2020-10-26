@@ -5,5 +5,35 @@
 </ion-header>
 
 <ion-content>
+  <ion-list>
+    <ion-list-header>
+      Ajustando controles
+    </ion-list-header>
+    <ion-item>
+      <ion-range [(ngModel)]="brightness">
+        <ion-icon size="small" slot="start" name="sunny"></ion-icon>
+        <ion-icon slot="end" name="sunny"></ion-icon>
+      </ion-range>
+    </ion-item>
+    <ion-item>
+      <ion-range min="-200" max="200" pin="true"[(ngModel1)]="contrast" color="secondary">
+        <ion-icon size="small" slot="start" name="contrast"></ion-icon>
+        <ion-icon slot="end" name="contrast"></ion-icon>
+      </ion-range>
+    </ion-item>
+    <ion-item>
+      <ion-range dualKnobs="false" pin="true" [(ngModel)]="structure">
+        <ion-icon size="small" slot="start" name="brush"></ion-icon>
+        <ion-icon slot="end" name="brush"></ion-icon>
+      </ion-range>
+    </ion-item>
+    <ion-item>
+      <ion-range min="1000" max="2000" step="100" snaps="true" [(ngModel)]="warmth" color="danger">
+        <ion-icon size="small" slot="start" color="danger" name="thermometer"></ion-icon>
+        <ion-icon slot="end" name="thermometer" color="danger"></ion-icon>
 
+      </ion-range>
+
+    </ion-item>
+  </ion-list>
 </ion-content>

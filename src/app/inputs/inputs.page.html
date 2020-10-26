@@ -4,6 +4,17 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-input type="text" placeholder="usuario" [(ngModel)]="campoLogin"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="password" placeholder="senha" [(ngModel)]="campoSenha"></ion-input>
+    </ion-item>
+  </ion-list>
 
+  <ion-button color="primary" (click)="enviar(campoLogin,campoSenha)" outline>Enviar</ion-button>
+  <p>{{campoLogin}}</p>
+  <p>{{mensagem}}</p>
 </ion-content>

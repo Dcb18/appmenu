@@ -4,6 +4,31 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content padding>
+  <ion-list>
+    <ion-item (click)="enviar('Saturno Planet')">
+      <ion-icon name="planet"></ion-icon>
+        Saturno Planet
+    </ion-item>
+    <ion-item (click)="enviar('Alarme')">
+      <ion-icon name="alarm"></ion-icon>
+      Alarme
+    </ion-item>
+    <ion-item (click)="enviar('Android')">
+      <ion-icon name="logo-android"></ion-icon>
+      Android
+    </ion-item>
+    <ion-item (click)="enviar('Apple')">
+      <ion-icon name="logo-apple"></ion-icon>
+      Apple
+    </ion-item>
+    <ion-item (click)="enviar('Contatos')">
+      <ion-icon name="contacts"></ion-icon>
+      Contatos
+    </ion-item>
+    <ion-item (click)="enviar('Bicicleta')">
+      <ion-icon name="bicycle"></ion-icon>
+      Bicicleta
+    </ion-item>
+  </ion-list>
 </ion-content>

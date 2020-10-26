@@ -5,5 +5,9 @@
 </ion-header>
 
 <ion-content>
-
+  <ion-button block (click)="showToast('top')">Show Toast Top Position</ion-button>
+     <ion-button block (click)="showToast('middle')">Show Toast Middle Position</ion-button>
+     <ion-button block (click)="showToast('bottom')">Show Toast Bottom Position</ion-button>
+     <ion-button block (click)="showLongToast()">Show Long Toast</ion-button>
+     <ion-button block (click)="showToastWithCloseButton()">Show Toast W/ Close button</ion-button>
 </ion-content>
